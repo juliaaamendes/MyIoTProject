@@ -18,3 +18,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+const mqttConfig = {
+  host: "aa90908a646b49fc8692467a16a98d3b.s1.eu.hivemq.cloud",
+  user: "AlunoETEC",
+  pass: "AETECluno1"
+};
