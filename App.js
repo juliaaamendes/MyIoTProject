@@ -5,11 +5,6 @@ import {
   View,
 } from 'react-native'
 
-import {
-  MQTT_HOST,
-  MQTT_USER,
-  MQTT_PASS,
-} from '@env'
 
 import { SafeAreaView } from 'react-native-safe-area-context'
 
@@ -32,9 +27,10 @@ export default function App() {
 
   useEffect(() => {
     connectMQTT({
-      host: MQTT_HOST,
-      user: MQTT_USER,
-      pass: MQTT_PASS,
+      host: "aa90908a646b49fc8692467a16a98d3b.s1.eu.hivemq.cloud",
+      user: "AlunoETEC",
+      port: 8884,
+      pass: "AETECluno1",
 
       onConnect: () => {
         console.log('Conectado ao broker')
